@@ -1,0 +1,122 @@
+.header {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.left-section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.logo-img {
+    margin-left: 35px;
+    cursor: pointer;
+}
+.middle-section {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.middle-section input {
+    flex: 1;
+    border: none;
+    height: 40px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 18px;
+    margin-right: 35px;
+    background: #3f9eaa1a;
+}
+.right-section {
+    width: 450px;
+    margin-right: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.login-container {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.cart-container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    cursor: pointer;
+}
+.seller-container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    cursor: pointer;
+}
+.three-dot-container {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+.three-dot {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px;
+}
+.three-dot:hover {
+    background-color: rgba(128, 128, 128, 0.068);
+    border: 1px solid rgba(128, 128, 128, 0.249);
+}
+.search-img {
+    height: 25px;
+    color: gray;
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    background-color: white;
+    padding: 8px 6px 7px 10px;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    background: #3f9eaa1a;
+}
+
+@media (max-width:1000px) {
+    .middle-section {
+        display: none;
+    }
+    .right-section {
+        margin: 0;
+    }
+    .left-section {
+        width: 150px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    } 
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-section {
+        justify-content: center;
+        column-gap: 15px;
+    }
+}
+
+@media (max-width:700px) {
+    .seller-container {
+        display: none;
+    }
+}
+
+@media (max-width:410px) {
+    .right-section {
+        width: 200px;
+    }
+}

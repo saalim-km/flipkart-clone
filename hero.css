@@ -1,0 +1,38 @@
+.hero-section {
+    margin: 0px 20px 14px 20px;
+    position: relative;
+}
+.hero-section img {
+    width: 100%;
+}
+.left-arrow {
+    position: absolute;
+    left: 0px;
+    top: 89px;
+    padding: 30px 15px;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 400;
+    font-size: 22px;
+    color: gray;
+}
+.right-arrow {
+    position: absolute;
+    right: 0px;
+    top: 89px;
+    padding: 30px 15px;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    font-weight: 400;
+    font-size: 22px;
+    color: gray;
+}
+
+@media (max-width:1250px) {
+    .left-arrow {
+        display: none;
+    }
+    .right-arrow {
+        display: none;
+    }
+}
